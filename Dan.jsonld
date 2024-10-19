@@ -1,5 +1,6 @@
 {
   "@context": {
+    "@language": "en-us",
     "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
     "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
     "hashAlgorithm": "CIP100:hashAlgorithm",
@@ -51,20 +52,26 @@
     }
   },
   "authors": [],
-  "hashAlgorithm": "blake2b-256",
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
   "body": {
     "doNotList": false,
-    "givenName": "Dan",
-    "motivations": "Cardano is the world's most decentralised blockchain, and one of the most secure and reliable. While VC chains proliferate the rest of the industry, Cardano has stayed true to its core values.\n\nCardano is more than just a blockchain: it's a social movement, a way to bring power back to the people, bank the unbanked, and provide the building blocks for a whole new ecosystem of tools and services.\n\nAs a DRep, I will work to ensure Cardano's success both now and in the future.",
-    "objectives": "Conservative treasury spending on:\n- Ensuring the continued development of Cardano, with a focus on core principles (decentralisation, security, reliability).\n- Encouraging and fostering builders within the ecosystem.\n- Smaller budget for effective marketing of Cardano's unique selling points.",
-    "paymentAddress": "",
-    "qualifications": "Passionate about the potential of blockchain technology, particularly Cardano, to help reshape the world's institutions and provide opportunities for people to thrive.",
-    "references": [
-      {
-        "@type": "Link",
-        "label": "X",
-        "uri": "https://x.com/dankarda"
-      }
-    ]
+    "givenName": {
+      "@value": "Dan"
+    },
+    "motivations": {
+      "@value": "Cardano is the world's most decentralised blockchain, and one of the most secure and reliable. It's also a social movement, a way to bring power back to the people, bank the unbanked, and provide the building blocks for a whole new ecosystem of tools and services. As a DRep, my focus will be on doing whatever I can to help Cardano succeed."
+    },
+    "objectives": {
+      "@value": "Conservative treasury spending on:\n- Ensuring the continued development of Cardano, with a focus on core principles (decentralisation, security, reliability).\n- Encouraging and fostering builders within the ecosystem.\n- Effective marketing of Cardano's unique selling points.\n\nPrioritise protocol improvements that improve the experience for developers and users."
+    },
+    "paymentAddress": {
+      "@value": ""
+    },
+    "qualifications": {
+      "@value": "Passionate about the potential of blockchain technology, particularly Cardano, to help reshape the world's institutions and provide opportunities for people to thrive."
+    },
+    "references": []
   }
 }
