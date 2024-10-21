@@ -60,11 +60,6 @@
     "givenName": {
       "@value": "Dan"
     },
-    "image": {
-      "@type": "ImageObject",
-      "contentUrl": "https://raw.githubusercontent.com/dankarda/cardano_drep/refs/heads/main/dankarda.png",
-      "sha256": "ee65e7c85a795b8434f18c2da02eb0be53bebdd0a03e77e9527435005dcc60b4"
-    },
     "motivations": {
       "@value": "Cardano is the world's most decentralised blockchain, and one of the most secure and reliable. It's also a social movement, a way to bring power back to the people, bank the unbanked, and provide the building blocks for a whole new ecosystem of tools and services. As a DRep, my focus will be on doing whatever I can to help Cardano succeed."
     },
