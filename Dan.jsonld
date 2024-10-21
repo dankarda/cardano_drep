@@ -72,16 +72,6 @@
     "qualifications": {
       "@value": "Passionate about the potential of blockchain technology, particularly Cardano, to help reshape the world's institutions and provide opportunities for people to thrive."
     },
-    "references": [
-      {
-        "@type": "Identity",
-        "label": {
-          "@value": "Label"
-        },
-        "uri": {
-          "@value": "https://raw.githubusercontent.com/dankarda/cardano_drep/refs/heads/main/dankarda.png"
-        }
-      }
-    ]
+    "references": []
   }
 }
