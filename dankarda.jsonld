@@ -1,0 +1,115 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "bio": "CIP119:bio",
+        "email": "CIP119:email",
+        "givenName": "CIP119:givenName",
+        "motivations": "CIP119:motivations",
+        "objectives": "CIP119:objectives",
+        "paymentAddress": "CIP119:paymentAddress",
+        "qualifications": "CIP119:qualifications",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject"
+          }
+        },
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [
+    {
+      "witness": {
+        "publicKey": {
+          "@value": "a4010103272006215820d1beb908aaf1e2063ac0af46d909309607d13c2af785e86756a693883b67f5ad"
+        },
+        "signature": {
+          "@value": "845829a201276761646472657373581c608355a04e0c683f70a462b70a1e73f0c71d80381c2dc8830a8ef926a166686173686564f458445665726966792044526570206472657031767a703474677a77703335723775397976326d7335386e6e377272336d71706372736b7533716332336d756a7676396338656c584052f11ad545ae211befdb1928532e9ecfabcef90ac10490b50fe97c0885a94f67c88b0ca175b105685c7e397a96c8171926cb753bcaab367eb4ac2306514b5b09"
+        },
+        "witnessAlgorithm": {
+          "@value": "Ed25519"
+        }
+      }
+    }
+  ],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "bio": {
+      "@value": "Empty"
+    },
+    "email": {
+      "@value": "Empty"
+    },
+    "givenName": {
+      "@value": "Dan"
+    },
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://ipfs.io/ipfs/QmcLA7KPwkRB47dp1dZeiMxNDq63o7imE1d4iBVU2dm9Dp",
+      "sha256": "ee65e7c85a795b8434f18c2da02eb0be53bebdd0a03e77e9527435005dcc60b4"
+    },
+    "motivations": {
+      "@value": "Cardano is one of the world's most decentralised, secure, and reliable blockchains. It's also a social movement, a way to bring power back to the people, bank the unbanked, and provide the building blocks for a whole new ecosystem of tools and services. As a DRep, my focus will be on doing whatever I can to help Cardano succeed."
+    },
+    "objectives": {
+      "@value": "I will vote on governance actions with the following objectives in mind: 1) Ensuring the ongoing development of Cardano, with a focus on core principles (decentralisation, security, reliability); 2) Encouraging and fostering builders within the ecosystem; 3) Effective marketing of Cardano's unique selling points; 4) Prioritising protocol upgrades that improve the experience for developers and users."
+    },
+    "paymentAddress": {
+      "@value": "Empty"
+    },
+    "qualifications": {
+      "@value": "Passionate about the potential of blockchain technology, particularly Cardano, to help reshape the world's institutions and provide opportunities for people to thrive."
+    },
+    "references": [
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "X"
+        },
+        "uri": {
+          "@value": "https://x.com/dankarda"
+        }
+      }
+    ]
+  }
+}
