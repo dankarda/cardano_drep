@@ -7,13 +7,24 @@
     "body": {
       "@id": "CIP119:body",
       "@context": {
+        "bio": "CIP119:bio",
+        "email": "CIP119:email",
+        "givenName": "CIP119:givenName",
+        "motivations": "CIP119:motivations",
+        "objectives": "CIP119:objectives",
+        "paymentAddress": "CIP119:paymentAddress",
+        "qualifications": "CIP119:qualifications",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject"
+          }
+        },
         "references": {
           "@id": "CIP119:references",
           "@container": "@set",
           "@context": {
             "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
-            "Identity": "CIP119:IdentityReference",
-            "Link": "CIP119:LinkReference",
             "Other": "CIP100:OtherReference",
             "label": "CIP100:reference-label",
             "uri": "CIP100:reference-uri",
@@ -25,14 +36,7 @@
               }
             }
           }
-        },
-        "paymentAddress": "CIP119:paymentAddress",
-        "givenName": "CIP119:givenName",
-        "image": "CIP119:image",
-        "objectives": "CIP119:objectives",
-        "motivations": "CIP119:motivations",
-        "qualifications": "CIP119:qualifications",
-        "doNotList": "CIP119:doNotList"
+        }
       }
     },
     "authors": {
@@ -51,14 +55,38 @@
       }
     }
   },
-  "authors": [],
+  "authors": [
+    {
+      "witness": {
+        "publicKey": {
+          "@value": "a4010103272006215820d1beb908aaf1e2063ac0af46d909309607d13c2af785e86756a693883b67f5ad"
+        },
+        "signature": {
+          "@value": "845829a201276761646472657373581c608355a04e0c683f70a462b70a1e73f0c71d80381c2dc8830a8ef926a166686173686564f458445665726966792044526570206472657031767a703474677a77703335723775397976326d7335386e6e377272336d71706372736b7533716332336d756a7676396338656c584052f11ad545ae211befdb1928532e9ecfabcef90ac10490b50fe97c0885a94f67c88b0ca175b105685c7e397a96c8171926cb753bcaab367eb4ac2306514b5b09"
+        },
+        "witnessAlgorithm": {
+          "@value": "Ed25519"
+        }
+      }
+    }
+  ],
   "hashAlgorithm": {
     "@value": "blake2b-256"
   },
   "body": {
-    "doNotList": false,
+    "bio": {
+      "@value": "Empty"
+    },
+    "email": {
+      "@value": "Empty"
+    },
     "givenName": {
       "@value": "Dan"
+    },
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://ipfs.io/ipfs/QmcLA7KPwkRB47dp1dZeiMxNDq63o7imE1d4iBVU2dm9Dp",
+      "sha256": "ee65e7c85a795b8434f18c2da02eb0be53bebdd0a03e77e9527435005dcc60b4"
     },
     "motivations": {
       "@value": "Cardano is one of the world's most decentralised, secure, and reliable blockchains. It's also a social movement, a way to bring power back to the people, bank the unbanked, and provide the building blocks for a whole new ecosystem of tools and services. As a DRep, my focus will be on doing whatever I can to help Cardano succeed."
@@ -67,14 +95,14 @@
       "@value": "I will vote on governance actions with the following objectives in mind: 1) Ensuring the ongoing development of Cardano, with a focus on core principles (decentralisation, security, reliability); 2) Encouraging and fostering builders within the ecosystem; 3) Effective marketing of Cardano's unique selling points; 4) Prioritising protocol upgrades that improve the experience for developers and users."
     },
     "paymentAddress": {
-      "@value": ""
+      "@value": "Empty"
     },
     "qualifications": {
       "@value": "Passionate about the potential of blockchain technology, particularly Cardano, to help reshape the world's institutions and provide opportunities for people to thrive."
     },
     "references": [
       {
-        "@type": "Link",
+        "@type": "Other",
         "label": {
           "@value": "X"
         },
